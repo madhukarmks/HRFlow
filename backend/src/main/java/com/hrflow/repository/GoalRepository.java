@@ -1,0 +1,1 @@
+package com.hrflow.repository; import com.hrflow.entity.Goal; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface GoalRepository extends JpaRepository<Goal,Long>{List<Goal> findByEmployeeId(Long id);}

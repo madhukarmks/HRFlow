@@ -1,0 +1,1 @@
+package com.hrflow.repository; import com.hrflow.entity.Payroll; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface PayrollRepository extends JpaRepository<Payroll,Long>{List<Payroll> findByEmployeeIdOrderByPayMonthDesc(Long id); Optional<Payroll> findByEmployeeIdAndPayMonth(Long id,String m);}

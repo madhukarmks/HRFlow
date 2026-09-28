@@ -1,0 +1,1 @@
+package com.hrflow.repository; import com.hrflow.entity.Department; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface DepartmentRepository extends JpaRepository<Department,Long>{Optional<Department> findByName(String name);}

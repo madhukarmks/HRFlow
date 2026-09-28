@@ -1,0 +1,1 @@
+package com.hrflow.entity; import jakarta.persistence.*;import lombok.*;import java.time.*; @Entity @Getter @Setter @NoArgsConstructor public class Interview { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) Long id; Long candidateId,interviewerEmployeeId; LocalDateTime scheduledAt; String mode,meetingLink,notes,status="SCHEDULED"; }

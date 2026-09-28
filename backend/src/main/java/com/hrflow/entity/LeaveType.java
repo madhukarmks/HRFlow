@@ -1,0 +1,1 @@
+package com.hrflow.entity; import jakarta.persistence.*;import lombok.*; @Entity @Getter @Setter @NoArgsConstructor @Table(name="leave_types") public class LeaveType { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) Long id; @Column(nullable=false,unique=true) String name; int defaultDays; boolean active=true; }

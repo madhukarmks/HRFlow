@@ -1,0 +1,1 @@
+package com.hrflow.entity; import jakarta.persistence.*;import lombok.*;import java.time.*; @Entity @Getter @Setter @NoArgsConstructor public class AuditLog { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) Long id; Long userId; String action,entityName,entityId,description,ipAddress; Instant createdAt=Instant.now(); }

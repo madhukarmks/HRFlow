@@ -1,0 +1,1 @@
+package com.hrflow.entity; import jakarta.persistence.*;import lombok.*;import java.time.*; @Entity @Getter @Setter @NoArgsConstructor public class Candidate { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) Long id; String name,email,phone,resumePath,skills,experience,education,status="APPLIED",notes; Long jobId; Instant createdAt=Instant.now(); }

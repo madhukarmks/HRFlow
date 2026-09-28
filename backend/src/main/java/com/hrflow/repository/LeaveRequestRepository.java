@@ -1,0 +1,1 @@
+package com.hrflow.repository; import com.hrflow.entity.LeaveRequest; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface LeaveRequestRepository extends JpaRepository<LeaveRequest,Long>{List<LeaveRequest> findByEmployeeIdOrderByCreatedAtDesc(Long id); long countByStatus(com.hrflow.entity.LeaveStatus s);}

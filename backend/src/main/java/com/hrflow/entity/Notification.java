@@ -1,0 +1,1 @@
+package com.hrflow.entity; import jakarta.persistence.*;import lombok.*;import java.time.*; @Entity @Getter @Setter @NoArgsConstructor public class Notification { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) Long id; Long userId; String title,message,type; boolean readFlag=false; Instant createdAt=Instant.now(); }

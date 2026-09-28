@@ -1,0 +1,1 @@
+package com.hrflow.dto; import jakarta.validation.constraints.*;import java.time.*; public record LeaveRequestDto(@NotNull Long employeeId,@NotNull Long leaveTypeId,@NotNull LocalDate startDate,@NotNull LocalDate endDate,@NotBlank String reason){}

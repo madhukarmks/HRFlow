@@ -1,0 +1,1 @@
+package com.hrflow.repository; import com.hrflow.entity.Bonus; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface BonusRepository extends JpaRepository<Bonus,Long>{List<Bonus> findByEmployeeId(Long id);}

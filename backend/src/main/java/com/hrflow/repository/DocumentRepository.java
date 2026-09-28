@@ -1,0 +1,1 @@
+package com.hrflow.repository; import com.hrflow.entity.Document; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface DocumentRepository extends JpaRepository<Document,Long>{List<Document> findByEmployeeId(Long id);}

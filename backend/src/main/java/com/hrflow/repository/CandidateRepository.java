@@ -1,0 +1,1 @@
+package com.hrflow.repository; import com.hrflow.entity.Candidate; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface CandidateRepository extends JpaRepository<Candidate,Long>{List<Candidate> findByJobId(Long id);}

@@ -1,0 +1,1 @@
+package com.hrflow.entity; import jakarta.persistence.*;import lombok.*;import java.math.*;import java.time.*; @Entity @Getter @Setter @NoArgsConstructor public class Bonus { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) Long id; Long employeeId; BigDecimal amount; String reason; boolean approved; Instant createdAt=Instant.now(); }

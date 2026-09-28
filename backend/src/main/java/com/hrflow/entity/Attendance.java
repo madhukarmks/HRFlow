@@ -1,0 +1,3 @@
+package com.hrflow.entity;
+import jakarta.persistence.*;import lombok.*;import java.time.*;
+@Entity @Getter @Setter @NoArgsConstructor @Table(name="attendance",uniqueConstraints=@UniqueConstraint(name="uk_att_emp_date",columnNames={"employee_id","attendance_date"}),indexes=@Index(name="idx_att_date",columnList="attendance_date")) public class Attendance { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) Long id; Long employeeId; LocalDate attendanceDate; LocalDateTime checkIn,checkOut; Integer workingMinutes=0,overtimeMinutes=0; @Enumerated(EnumType.STRING) AttendanceStatus status; String location; }

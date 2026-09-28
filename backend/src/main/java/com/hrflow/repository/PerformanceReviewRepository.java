@@ -1,0 +1,1 @@
+package com.hrflow.repository; import com.hrflow.entity.PerformanceReview; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface PerformanceReviewRepository extends JpaRepository<PerformanceReview,Long>{List<PerformanceReview> findByEmployeeId(Long id);}

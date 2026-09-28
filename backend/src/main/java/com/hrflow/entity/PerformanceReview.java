@@ -1,0 +1,1 @@
+package com.hrflow.entity; import jakarta.persistence.*;import lombok.*;import java.time.*; import java.math.BigDecimal; @Entity @Getter @Setter @NoArgsConstructor public class PerformanceReview { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) Long id; Long employeeId,reviewerId; String cycle,feedback,improvementAreas; BigDecimal rating; Instant createdAt=Instant.now(); }

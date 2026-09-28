@@ -1,0 +1,1 @@
+package com.hrflow.entity; import jakarta.persistence.*;import lombok.*;import java.time.*; @Entity @Getter @Setter @NoArgsConstructor public class Goal { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) Long id; Long employeeId,managerId; String title,description; int progress; LocalDate dueDate; String status="ACTIVE"; }

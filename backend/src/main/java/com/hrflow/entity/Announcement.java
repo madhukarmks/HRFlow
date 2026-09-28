@@ -1,0 +1,1 @@
+package com.hrflow.entity; import jakarta.persistence.*;import lombok.*;import java.time.*; @Entity @Getter @Setter @NoArgsConstructor public class Announcement { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) Long id; String title,description,category,targetAudience; LocalDate publishDate,expiryDate; Instant createdAt=Instant.now(); }

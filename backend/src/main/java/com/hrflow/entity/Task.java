@@ -1,0 +1,1 @@
+package com.hrflow.entity; import jakarta.persistence.*;import lombok.*;import java.time.*; @Entity @Getter @Setter @NoArgsConstructor public class Task { @Id @GeneratedValue(strategy=GenerationType.IDENTITY) Long id; Long employeeId,assignedBy; String title,description,priority="MEDIUM"; LocalDate dueDate; @Enumerated(EnumType.STRING) TaskStatus status=TaskStatus.TODO; }

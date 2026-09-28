@@ -1,0 +1,1 @@
+package com.hrflow.repository; import com.hrflow.entity.LeaveBalance; import org.springframework.data.jpa.repository.JpaRepository; import java.util.*; public interface LeaveBalanceRepository extends JpaRepository<LeaveBalance,Long>{List<LeaveBalance> findByEmployeeId(Long id); Optional<LeaveBalance> findByEmployeeIdAndLeaveTypeIdAndYear(Long e,Long l,int y);}
